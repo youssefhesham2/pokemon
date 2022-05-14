@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pokmon">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -11,7 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pokémon">
         <activity
-            android:name=".MainActivity"
+            android:name=".favActivity.FavActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pokemonActivity.PokemonActivity"/>
+        </activity>
+        <activity
+            android:name=".pokemonActivity.PokemonActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

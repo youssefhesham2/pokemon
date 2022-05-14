@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pokémon</string>
+    <string name="empty_data">Not Data Found!</string>
+    <string name="from_network">Network</string>
+    <string name="from_local">local</string>
+    <string name="added_successful">Pokemon Added to Favourite list successfully</string>
 </resources>
